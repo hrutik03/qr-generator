@@ -79,7 +79,7 @@ export default function EmployeeQRForm() {
     Object.entries(formData).forEach(([key, value]) => {
       if (value) query.append(key, value);
     });
-    return `https://example.com/business-card?${query.toString()}`;
+    return `https://qrcode-generat.netlify.app/business-card?${query.toString()}`;
   };
 
   const qrData = createUrl();
